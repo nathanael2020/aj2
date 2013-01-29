@@ -15,9 +15,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: eq_spree_development
+  database: aj_dev
   pool: 5
-  username: nathanaelmiksis
+  username: nathanael
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -41,15 +41,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: eq_spree_test
+  database: aj_test
   pool: 5
-  username: nathanaelmiksis
+  username: nathanael
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: eq_spree_production
+  database: aj_prod
   pool: 5
-  username: nathanaelmiksis
+  username: nathanael
   password:

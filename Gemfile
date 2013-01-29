@@ -6,7 +6,6 @@ gem 'rails', '3.2.11'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'spree_reviews', :git => 'git://github.com/spree/spree_reviews.git'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -29,13 +28,16 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+ gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+ gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'spree_reviews', :git => 'git://github.com/spree/spree_reviews.git'
+
 gem 'spree', '1.3.1'
 #gem 'spree', '1.3', :path => '../spree'
 #gem 'spree_fancy', :path => '../spree_fancy'

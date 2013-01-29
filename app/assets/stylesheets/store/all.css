@@ -18,6 +18,7 @@
  *= require icons
  *= require icons-codes
 
+ *= require store/spree_product_zoom
 */
 
 body {
@@ -34,6 +35,7 @@ body {
 text-decoration: none;
 color: #0033ee;
 }
+ *= require store/spree_product_zoom
 */
 
 #main-image {
@@ -42,6 +44,12 @@ color: #0033ee;
       background-color: #FFFFFF;
       margin-bottom: 20px;
 
+}
+
+#header {
+	
+	background-color: #E31A23;
+	
 }
 
 #product-images {
@@ -58,6 +66,7 @@ color: #0033ee;
         max-width: 100%;
         
         /* Fluid images for product 
+ *= require store/spree_product_zoom
 */
       }
     }
@@ -99,6 +108,7 @@ color: #0033ee;
 
 #tabs .ui-widget {
 font-size: 12pt/*{fsDefault} 
+ *= require store/spree_product_zoom
 */;
 }
 
@@ -126,15 +136,22 @@ background: none;
 
 .ui-widget-content {
 border: 1px solid #aaaaaa/*{borderColorContent} 
+ *= require store/spree_product_zoom
 */;
 background: #ffffff/*{bgColorContent} *= require store/spree_fancy
+ *= require store/spree_product_zoom
 */ url(images/ui-bg_flat_75_ffffff_40x100.png)/*{bgImgUrlContent} 
+ *= require store/spree_product_zoom
 */ 50%/*{bgContentXPos} 
+ *= require store/spree_product_zoom
 */ 50%/*{bgContentYPos} 
+ *= require store/spree_product_zoom
 */ repeat-x/*{bgContentRepeat}
 	
+ *= require store/spree_product_zoom
 */;
 color: #222222/*{fcContent} *
+ *= require store/spree_product_zoom
 */;
 }
 
@@ -174,10 +191,12 @@ display: table;
 }
 
 .ui-tabs { position: relative; padding-right: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed")  
+ *= require store/spree_product_zoom
 */
 .ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0em 0em; }
 
-/*.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }*/
+/*.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; } *= require store/spree_product_zoom
+*/
 
 .ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; padding: 0; white-space: nowrap; }
 
@@ -186,6 +205,7 @@ display: table;
 .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
 .ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere...  
 	
+ *= require store/spree_product_zoom
 */
 .ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 0em ; background: none; }
 .ui-tabs .ui-tabs-hide { display: none !important; }
@@ -243,6 +263,7 @@ display: table;
 /*
  * jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/
  ************************************************************************** 
+ *= require store/spree_product_zoom
 */
 
 div.rating-cancel, div.star-rating {
@@ -282,12 +303,14 @@ div.star-rating-hover, div.star-rating-hover a {
 
 /* Read Only CSS  
 	
+ *= require store/spree_product_zoom
 */
 div.star-rating-readonly a {
   cursor: default !important
 }
 
 /* Partial Star CSS  
+ *= require store/spree_product_zoom
 */
 div.star-rating {
 /* 
@@ -295,10 +318,12 @@ This caused the review stars not to show up
 background-color: transparent !important;
 overflow: hidden !important
  *= require store/spree_fancy
+ *= require store/spree_product_zoom
 */
 }
 
 /* END jQuery.Rating Plugin CSS  
+ *= require store/spree_product_zoom
 */
 
 
@@ -371,19 +396,21 @@ font-size: 12px;
   
   div.header-image {
 	  
-	background-image: url('http://localhost:3000/assets/store/header-image.jpg');
+	/*background-image: url('http://localhost:3000/assets/store/header-fade.jpg'); *= require store/spree_product_zoom
+*/
 	margin:0px;
-	height:261px;
 	  
   }
   
   nav #main-nav-bar {
 text-transform: uppercase;
 font-weight: bold;
-margin-top: 0px;
-/*border-bottom: 1px solid #d9d9db;*/
+margin-top: 10px;
+/*border-bottom: 1px solid #d9d9db; *= require store/spree_product_zoom
+*/
 border-bottom: none;
 padding-bottom: 6px;
+line-height: 0px;
 }
 
 #top-nav-bar a {
@@ -395,7 +422,23 @@ padding-bottom: 6px;
 
 #main-nav-bar a {
 	
-	color: #ffffff;
+	color: #220000;
+	
+}
+
+
+#main-nav-bar a:link {
+	
+	color: #FF0000;
+	-webkit-tap-highlight-color: #FF0000;
+	
+}
+
+
+#main-nav-bar a:hover {
+	
+	color: #FF0000;
+	-webkit-tap-highlight-color: #FF0000;
 	
 }
 
